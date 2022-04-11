@@ -1,21 +1,21 @@
 # grephic
 
-Introduction
+##Introduction
 
-Feature overview
+##Feature overview
 
-Technical dependencies
+##Technical dependencies
 
-Support
+##Support
 
-Author
+##Author
 This project was made with love and devotion by yours truly,
 Emma Van der Haeghen and Elan Goens <3
 
-License
+##License
 MIT License
 
-Copyright (c) 2022 Emma Van der Haeghen
+Copyright (c) 2022 Emma Van der Haeghen | Elan Goens
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
