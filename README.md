@@ -1,18 +1,18 @@
 # grephic
 
-##Introduction
+## Introduction
 
-##Feature overview
+## Feature overview
 
-##Technical dependencies
+## Technical dependencies
 
-##Support
+## Support
 
-##Author
+## Author
 This project was made with love and devotion by yours truly,
 Emma Van der Haeghen and Elan Goens <3
 
-##License
+## License
 MIT License
 
 Copyright (c) 2022 Emma Van der Haeghen | Elan Goens
