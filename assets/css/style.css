@@ -107,7 +107,6 @@ img {
 .card {
   text-align: center;
   padding: 2rem;
-  margin: 2rem 1rem;
   background-color: var(--beige);
   box-shadow: 0px 3px 6px #00000029;
   border-radius: 10px;
@@ -162,10 +161,6 @@ path:hover {
     width: 30rem;
   }
 
-  .block {
-    margin: 3rem;
-  }
-
   h1 {
     font-size: 1.5rem;
   }
@@ -181,6 +176,7 @@ path:hover {
   .cards,
   .project-cards {
     display: flex;
+    gap: 2rem;
   }
 
   .project-cards {
@@ -195,16 +191,23 @@ path:hover {
 
   .introduction {
     display: flex;
-    margin: 1rem 0 0 0;
+    margin: 4rem 0;
+    justify-content: center;
+    align-items: center;
   }
 
   .flex-block {
     display: flex;
+    gap: 4rem;
     margin: 2rem 0;
   }
 
   .image-block {
-    margin: 0 2rem;
+    min-width: 26rem;
+  }
+
+  .image-block img{
+    border-radius: 1rem;
   }
 
   footer {
@@ -231,6 +234,15 @@ path:hover {
 .desktop-navigation {
   display: none;
 }
+
+.desktop-nav-menu {
+  display: flex;
+}
+
+.desktop-nav-menu li:hover {
+  color: var(--light-blue);
+}
+
 
 .toggle {
   position: relative;
@@ -335,4 +347,14 @@ ul.mobile-nav-menu {
 .mobile-navigation[data-visible="true"] {
   display: block;
   height: 47vh;
+}
+
+@media only screen and (min-width: 50rem) {
+  .desktop-navigation {
+    display: block;
+  }
+
+  .mobile-navigation, .toggle {
+    display: none;
+  }
 }
