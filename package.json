@@ -1,0 +1,26 @@
+{
+  "name": "grephic",
+  "version": "1.0.0",
+  "description": "## Introduction",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pgm-emmavanderhaeghen/grephic.git"
+  },
+  "keywords": [],
+  "author": "Emma Van der Haeghen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pgm-emmavanderhaeghen/grephic/issues"
+  },
+  "homepage": "https://github.com/pgm-emmavanderhaeghen/grephic#readme",
+  "dependencies": {
+    "gsap": "^3.10.4"
+  },
+  "devDependencies": {
+    "concurrently": "^7.1.0"
+  }
+}
