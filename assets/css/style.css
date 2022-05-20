@@ -46,7 +46,7 @@ br {
 }
 
 section {
-  margin: 2rem 0;
+  margin: 6rem 0;
 }
 
 h1 {
@@ -56,16 +56,21 @@ h1 {
 
 }
 
-h1:after {
+/* h1:after {
   content: '';
   background: var(--yellow) no-repeat;
   border-radius: 43px;
-}
+} */
 
 h2 {
-  font-weight: 700;
-  font-size: 1.1rem;
+  font-weight: 800;
+  font-size: 1.5rem;
   padding-top: 1rem;
+}
+
+.title {
+  margin-bottom: 1.2rem;
+  font-size: 1.2rem;
 }
 
 p {
@@ -81,6 +86,7 @@ p {
 .link {
   display: inline-block;
   padding: 1rem 2.5rem;
+  margin: 1rem 0;
   text-align: center;
   color: var(--yellow);
   font-size: 0.9rem;
@@ -91,6 +97,18 @@ p {
 .link:hover {
   color: var(--white);
   background-color: var(--yellow);
+}
+
+.tag {
+    display: inline-block;
+    padding: .2rem 1rem;
+    margin: .5rem 0;
+    text-align: center;
+    color: var(--white);
+    font-size: 0.9rem;
+    background-color: var(--light-blue);
+    border: 2px solid var(--light-blue);
+    border-radius: 43px;
 }
 
 img {
@@ -169,6 +187,11 @@ path:hover {
     font-size: 1.2rem;
   }
 
+  .title {
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+  }
+
   p {
     font-size: 1rem;
   }
@@ -199,9 +222,13 @@ path:hover {
   .flex-block {
     display: flex;
     gap: 4rem;
-    margin: 2rem 0;
+    margin: 6rem 0;
   }
 
+  .block {
+    margin: 4rem 0;
+  }
+  
   .image-block {
     min-width: 26rem;
   }
@@ -215,6 +242,8 @@ path:hover {
     justify-content: center;
   }
 }
+
+
 
 
 @media (min-width: 65rem) {
