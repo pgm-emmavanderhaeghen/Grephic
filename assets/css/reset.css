@@ -1,190 +1,75 @@
-/* v2.1.2
-Lyttle Reset ~ Recommended to use with Lyttle Defaults:
-https://github.com/Stualyttle/LyttleTools/blob/main/CSS/defaults.css
-*/
-
+/* Box sizing rules */
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    content: "";
-    content: none;
-    margin: 0;
-    padding: 0;
-    /* word-wrap: break-word; */
+  box-sizing: border-box;
 }
 
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'],
+li {
+  list-style: none;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Set core root defaults */
 html:focus-within {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: reduce) {
-    *,
-    *::before,
-    *::after {
-        animation-duration: .01ms !important;
-        animation-iteration-count: 1 !important;
-        scroll-behavior: auto !important;
-        transition-duration: .01ms !important;
-    }
-
-    html:focus-within {
-        scroll-behavior: auto;
-    }
-}
-
+html, 
 body {
-    line-height: 1;
-    min-height: 100vh;
-    text-rendering: optimizeSpeed;
+  height: 100%;
 }
 
-b,
-strong {
-    font-weight: bolder;
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
 }
 
-blockquote,
-q {
-    quotes: none;
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
 }
 
-button,
-[type="button"],
-[type="submit"] {
-    -webkit-appearance: button;
-}
-
+/* Make images easier to work with */
 img,
-picture {
-    border-style: none;
-    display: block;
-    max-width: 100%;
+picture,
+svg {
+  max-width: 100%;
+  display: block;
 }
 
-button,
-input,
-optgroup,
-select,
-textarea,
-::placeholder {
-    background: none;
-    border: none;
-    color: inherit;
-    font: inherit;
-    opacity: 1;
-    outline: none;
-    overflow: visible;
-    text-transform: none;
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-menu,
-nav,
-section {
-    display: block;
-}
-
-ol,
-ul {
-    list-style: none;
-}
-
-a,
-abbr,
-acronym,
-address,
-applet,
-article,
-aside,
-audio,
-b,
-big,
-blockquote,
-body,
-canvas,
-caption,
-center,
-cite,
-code,
-dd,
-del,
-details,
-dfn,
-div,
-dl,
-dt,
-em,
-embed,
-fieldset,
-figcaption,
-figure,
-footer,
-form,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-header,
-hgroup,
-html,
-i,
-iframe,
-img,
-ins,
-kbd,
-label,
-legend,
-li,
-mark,
-menu,
-nav,
-object,
-ol,
-output,
-p,
-pre,
-q,
-ruby,
-s,
-samp,
-section,
-small,
-span,
-strike,
-strong,
-sub,
-summary,
-sup,
-table,
-tbody,
-td,
-tfoot,
-th,
-thead,
-time,
-tr,
-tt,
-u,
-ul,
-var,
-video {
-    border: 0;
-    color: inherit;
-    font: inherit;
-    font-size: 100%;
-    margin: 0;
-    padding: 0;
-    text-decoration: inherit;
-    vertical-align: baseline;
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

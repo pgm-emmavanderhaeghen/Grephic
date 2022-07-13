@@ -5,11 +5,153 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grephic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <div class="container">
-        <header>
+        <div class="navbar">
+            <div class="logo">
+                <img class="logo" src="assets/images/logo.svg" alt="grephic_logo">                </div>
+            <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                <img class="close-toggle" src="assets/images/close-toggle.svg" alt="x">
+                <img class="toggle" src="assets/images/open-toggle.svg" alt="-">
+            </button>
+            <nav class="mobile-navigation" id="primary-navigation" data-visible="false">
+                <ul class="mobile-nav-menu">
+                    <li class="nav-menu__item"><a href="index.html" class="current">Home</a></li>
+                    <li class="nav-menu__item"><a href="portfolio.html" class="">Portfolio</a></li>
+                    <li class="nav-menu__item"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <nav class="desktop-navigation" id="desktop-navigation" data-visible="true">
+                <ul class="desktop-nav-menu">
+                    <li class="nav-menu__item"><a href="index.html" class="current">Home</a></li>
+                    <li class="nav-menu__item"><a href="portfolio.html" class="">Portfolio</a></li>
+                    <li class="nav-menu__item"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section class="hero">
+            <div class="text-block">
+                <h1>Hallo</h1>
+                <h2>Wat fijn dat je hier bent</h2>
+    
+                <p>Ik ben Emma, een 22 jarige creatieve duizendpoot met interesses in grafisch ontwerp, web design en online marketing.</p>
+                <p> Ik heb een Bacherlordiploma Grafische en Digitale Media op zak, en ben nu ook gestart als graduaatstudent Programmeren aan de Artevelde Hogeschool.</p>
+                <p>Als je mij niet aan mijn computer ziet, dan kan je mij vinden met een goed boek of mijn meest recente breiwerk project. </p>
+                <p class="bold-text">Je kan altijd meer over mij leren bij een gezellige babbel.</p>
+                <a class="btn btn-yellow" href="">Contacteer me</a>
+            </div>
+            <div class="img-block">
+                <img class="centered-img hero-img" src="assets/images/memoji-happy.svg" alt="memoji_happy">
+            </div>
+        </section>
+        <section class="cards">
+            <div class="card">
+                <img class="centered-img" src="assets/images/pencil.svg" alt="">
+                <h3>grafisch ontwerp</h3>
+                <img class="centered-img" src="assets/images/line-yellow.svg" alt="">
+                <p>Het ontwerp van logo's, brochures, kaartjes en ander drukwerk, UI/UX design.</p>
+            </div>
+            <div class="card">
+                <img class="centered-img" src="assets/images/code.svg" alt="">
+                <h3>web ontwikkeling</h3>
+                <img class="centered-img" src="assets/images/line-blue.svg" alt="">
+                <p>Een mooie en bruikbare website van a tot z, die op alle schermen goed oogt.</p>
+            </div>
+            <div class="card">
+                <img class="centered-img" src="assets/images/like.svg" alt="">
+                <h3>media productie</h3>
+                <img class="centered-img" src="assets/images/line-green.svg" alt="">
+                <p>Sterke social media posts en planning, storytelling en catchy 2D/3D animatie.</p>
+            </div>
+        </section>
+        <section class="about">
+            <div class="img-block">
+                <img class="img hero-img" src="assets/images/emma.svg" alt="memoji_happy">
+            </div>
+            <div class="text-block">
+                <h2>Wie ben ik?</h2>
+                <p>Als <span class="bold-text">grafisch ontwerper</span> ben ik gedreven om alles wat ik maak met een streng oog voor detail te doen. Esthetiek draag ik zeer hoog in het vaandel en daarom werk ik consistent naar een mooi eindresultaat.</p>
+                <p>Als <span class="bold-text">web developer</span> kijk ik naar clean en correct code. Tot het uiterste gaan om net dat kleine beetje extra uit de kan te halen uit ieder project zit diep in mijn DNA.</p>
+                <p>Als <span class="bold-text">online marketeer</span> ben ik nog groen achter mijn oren, maar dat houdt me absoluut niet tegen om elke dag te leren en ontdekken. Elke uitdaging is een leerschool en dat motiveert me bij elk nieuw project.</p>
+            </div>
+            
+        </section>
+        <section class="skills">
+            <div class="text-block">
+                <h2>Mijn skills</h2>
+                <p>Ik ben volledig thuis in de Adobe Creative Suite met in bijzonder: Photoshop, Illustrator, InDesign en XD. Ik heb ook een beperkte kennis van After Effects.</p>
+                <p>De wereld van Html5 en CSS3 heeft geen geheimen meer voor mij en ook Javascript, NodeJS en Sass klinken voor mij als muziek in de oren.</p>
+                <p>Op dit moment ben ik vollop bezig om React en Blender te ontdekken.</p>
+            
+                <a class="btn btn-blue" href="">Download CV</a>
+            </div>
+
+            <div class="img-block">
+                <img class="img hero-img" src="assets/images/emma2.svg" alt="memoji_happy">
+            </div>
+        </section>
+        <section class="projects">
+            <h2>Trots stel ik u voor:</h2>
+            <div class="project-cards">
+                <a href="/portfolio/yoga-sofie.html" class="project-card">
+                    <img class="project-image" src="assets/images/YogaSofie/visitekaartje.jpg" alt="">
+                </a>
+                <a class="project-card">
+                    <img class="project-image" src="assets/images/Newspaper/frontpage.png" alt="">
+                </a>
+                <a class="project-card">
+                    <img class="project-image" src="assets/images/TuinenHans/invoice.png" alt="">
+                </a>
+            </div>
+            <a class="btn btn-yellow" href="">Bekijk meer projecten</a>
+        </section>
+        <div class="footer">
+            <div class="links">
+                <a class="page-link" href="https://github.com/pgm-emmavanderhaeghen" target="_blank">
+                    <img class="icon" src="assets/images/socials/github.svg" alt="Github">
+                </a>
+                <a class="page-link" href="https://www.linkedin.com/in/emma-van-der-haeghen-222932173/" target="_blank">
+                    <img class="icon" src="assets/images/socials/linkedin.svg" alt="LinkedIn">
+                </a>
+                <a class="page-link" href="https://dribbble.com/Emma_VdH/about" target="_blank">
+                    <img class="icon" src="assets/images/socials/dribbble.svg" alt="Dribbble">
+                </a>
+                <a class="page-link" href="https://www.behance.net/emmavander1" target="_blank">
+                    <img class="icon" src="assets/images/socials/behance.svg" alt="Behance">
+                </a>
+            </div>
+            <div class="links">
+                <a class="page-link" href="https://www.instagram.com/grephic/" target="_blank">
+                    <img class="icon" src="assets/images/socials/instagram.svg" alt="Instagram">
+                </a>
+                <a class="page-link" href="https://open.spotify.com/?nd=1" target="_blank">
+                    <img class="icon" src="assets/images/socials/spotify.svg" alt="Spotify">
+                </a>
+                <a class="page-link" href="https://www.facebook.com/emma.vanderhaeghen/" target="_blank">
+                    <img class="icon" src="assets/images/socials/facebook.svg" alt="Facebook">
+                </a>
+                <a class="page-link" href="https://twitter.com/Emma60665908" target="_blank">
+                    <img class="icon" src="assets/images/socials/twitter.svg" alt="Twitter">
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    
+        <!-- <header>
             <div class="navbar">
                 <div class="logo">
                     <img src="assets/images/logo.svg" alt="logo">
@@ -137,8 +279,9 @@
                     </svg>
                 </a>
             </div>
-        </footer>
-    </div>
+        </footer> -->
+    
+
     <script src="assets/scripts/app.js"></script>
 </body>
 </html>
